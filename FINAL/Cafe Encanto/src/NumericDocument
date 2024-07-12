@@ -1,0 +1,34 @@
+import javax.swing.text.PlainDocument;
+
+// Custom document for numeric input
+public class NumericDocument extends PlainDocument {
+    private final NumericDocumentFilter filter = new NumericDocumentFilter();
+
+    @Override
+    public void insertString(int offs, String str, AttributeSet a) throws BadLocationException {
+        if (str == null) {
+            return;
+        }
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < str.length(); i++) {
+            if (Character.isDigit(str.charAt(i))) {
+                sb.append(str.charAt(i));
+            }
+        }
+        super.insertString(offs, sb.toString(), a);
+    }
+
+    @Override
+    public void replace(int offs, int length, String str, AttributeSet a) throws BadLocationException {
+        if (str == null) {
+            return;
+        }
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < str.length(); i++) {
+            if (Character.isDigit(str.charAt(i))) {
+                sb.append(str.charAt(i));
+            }
+        }
+        super.replace(offs, length, sb.toString(), a);
+    }
+}
