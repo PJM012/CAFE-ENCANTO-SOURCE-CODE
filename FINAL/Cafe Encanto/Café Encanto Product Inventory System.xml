@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\Users\ADMIN\Downloads\FINAL\Cafe Encanto\Cafe Encanto.jar</jar>
+  <outfile>C:\Users\ADMIN\Downloads\FINAL\Café Encanto Product Inventory System.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl></downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\Users\ADMIN\Downloads\FINAL\Cafe Encanto\images\app logo.ico</icon>
+  <singleInstance>
+    <mutexName>Café Encanto Product Inventory System</mutexName>
+    <windowTitle>Café Encanto Product Inventory System</windowTitle>
+  </singleInstance>
+  <jre>
+    <path>%JAVA_HOME%;%PATH%</path>
+    <requiresJdk>false</requiresJdk>
+    <requires64Bit>false</requires64Bit>
+    <minVersion></minVersion>
+    <maxVersion></maxVersion>
+  </jre>
+</launch4jConfig>
